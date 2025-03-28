@@ -18,20 +18,21 @@ LITTOOLS_EXCLUDE=Bash,Replace ./littools claude mcp serve
 
 ## Env
 
-• LITTOOLS_EXCLUDE: Comma-separated list of tool names to exclude from list/tools
+- LITTOOLS_EXCLUDE: Comma-separated list of tool names to exclude from list/tools
 
 ## How it works
 
 This script:
-• Launches the given MCP command
-• Intercepts its stdout
-• Filters out matching tools (by .name) from list/tools responses
-• Outputs valid single-line JSON (Claude-safe)
+
+- Launches the given MCP command
+- Intercepts its stdout
+- Filters out matching tools (by .name) from list/tools responses
+- Outputs valid single-line JSON (Claude-safe)
 
 ## Requirements
 
-• bash
-• jq
+- bash
+- jq
 
 ## Notes
 
